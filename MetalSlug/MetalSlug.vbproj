@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8B0AA27-D5A2-42CF-9E6B-4098D0871F4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MetalSlug.My.MyApplication</StartupObject>
+    <RootNamespace>MetalSlug</RootNamespace>
+    <AssemblyName>MetalSlug</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MetalSlug.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MetalSlug.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Juego.Designer.vb">
+      <DependentUpon>Juego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Juego.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Juego.resx">
+      <DependentUpon>Juego.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Musica\Metal slug misión 2 música de fondo.wav" />
+    <None Include="Musica\Disparo.wav" />
+    <None Include="Musica\113-game-over.wav" />
+    <None Include="Musica\01-mission-complete.wav" />
+    <None Include="Musica\Disparo.mp3" />
+    <None Include="Musica\113-game-over.mp3" />
+    <None Include="Musica\03-stage-2.mp3" />
+    <None Include="Musica\01-mission-complete.mp3" />
+    <None Include="Resources\DisparoSonido.bmp" />
+    <None Include="Resources\Salto9.bmp" />
+    <None Include="Imagenes\Salto31.png" />
+    <None Include="Imagenes\Salto21.png" />
+    <None Include="Imagenes\Salto101.png" />
+    <None Include="Imagenes\Salto11.png" />
+    <None Include="Imagenes\Salto10.png" />
+    <None Include="Imagenes\Salto9.png" />
+    <None Include="Imagenes\Salto8.png" />
+    <None Include="Imagenes\Salto7.png" />
+    <None Include="Imagenes\Salto6.png" />
+    <None Include="Imagenes\Salto5.png" />
+    <None Include="Imagenes\Salto4.png" />
+    <None Include="Imagenes\Salto3.png" />
+    <None Include="Imagenes\Salto2.png" />
+    <None Include="Imagenes\Salto1.png" />
+    <None Include="Imagenes\DisparoIzquierda.png" />
+    <None Include="Imagenes\Izquierda10.png" />
+    <None Include="Imagenes\Izquierda9.png" />
+    <None Include="Imagenes\Izquierda8.png" />
+    <None Include="Imagenes\Izquierda7.png" />
+    <None Include="Imagenes\Izquierda6.png" />
+    <None Include="Imagenes\Izquierda5.png" />
+    <None Include="Imagenes\Izquierda4.png" />
+    <None Include="Imagenes\Izquierda3.png" />
+    <None Include="Imagenes\Izquierda2.png" />
+    <None Include="Imagenes\Izquierda1.png" />
+    <None Include="Imagenes\Corre9.png" />
+    <None Include="Imagenes\Corre8.png" />
+    <None Include="Imagenes\Corre7.png" />
+    <None Include="Imagenes\Corre6.png" />
+    <None Include="Imagenes\Corre5.png" />
+    <None Include="Imagenes\Corre4.png" />
+    <None Include="Imagenes\Corre3.png" />
+    <None Include="Imagenes\Corre2.png" />
+    <None Include="Imagenes\Disparo.png" />
+    <None Include="Imagenes\Mission3.jpg" />
+    <None Include="Imagenes\Mission2.jpg" />
+    <None Include="Imagenes\Corre1.png" />
+    <None Include="Imagenes\MetalSlug-Mission1.jpg" />
+    <None Include="Resources\picasion.com_c303beb0e49fa1702d2015a122072554.gif" />
+    <None Include="Imagenes\1sp568.gif" />
+    <None Include="Imagenes\Agacho1.png" />
+    <None Include="Imagenes\Agacho2.png" />
+    <None Include="Imagenes\Agacho3.png" />
+    <None Include="Imagenes\Enemigo1.png" />
+    <None Include="Imagenes\Enemigo2.png" />
+    <None Include="Imagenes\Enemigo3.png" />
+    <None Include="Imagenes\Enemigo4.png" />
+    <None Include="Imagenes\Enemigo5.png" />
+    <None Include="Imagenes\Enemigo6.png" />
+    <None Include="Imagenes\Enemigo7.png" />
+    <None Include="Imagenes\Enemigo8.png" />
+    <None Include="Imagenes\Enemigo9.png" />
+    <None Include="Imagenes\Bala.png" />
+    <None Include="Imagenes\Bala Izquierda.png" />
+    <None Include="Imagenes\EnemigoIzquierda.png" />
+    <None Include="Imagenes\EnemigoIzquierda2.png" />
+    <None Include="Imagenes\EnemigoIzquierda3.png" />
+    <None Include="Imagenes\EnemigoIzquierda4.png" />
+    <None Include="Imagenes\EnemigoIzquierda5.png" />
+    <None Include="Imagenes\EnemigoIzquierda6.png" />
+    <None Include="Imagenes\EnemigoIzquierda7.png" />
+    <None Include="Imagenes\EnemigoIzquierda8.png" />
+    <None Include="Imagenes\EnemigoIzquierda9.png" />
+    <None Include="Imagenes\Cayendo.PNG" />
+    <None Include="Imagenes\CayendoIzquierda.PNG" />
+    <Content Include="Imagenes\Fondo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
